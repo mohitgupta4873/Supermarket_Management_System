@@ -62,11 +62,13 @@ app.get("/", (req, res) => {
 const authRoutes = require("./routes/auth");
 const managerRoutes = require("./routes/manager");
 const clerkRoutes = require("./routes/clerk");
+
 const commonRoutes = require("./routes/common");
 
 app.use("/", authRoutes);
 app.use("/", commonRoutes);
 app.use("/", managerRoutes);
+
 app.use("/", clerkRoutes);
 
 // Server

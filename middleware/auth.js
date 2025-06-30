@@ -6,10 +6,10 @@ module.exports.isLoggedIn = (req, res, next) => {
   next();
 };
 
-module.exports.roleCheck = (role) => {
+module.exports.roleCheck = (...allowedRoles) => {
   return (req, res, next) => {
-    if (!req.user || req.user.user_type !== role) {
-      req.flash("error", `Only ${role}s are authorized for this action`);
+    if (!req.user || !allowedRoles.includes(req.user.user_type)) {
+      req.flash("error", "You are not authorized for this action");
       return res.redirect("/welcome");
     }
     next();
