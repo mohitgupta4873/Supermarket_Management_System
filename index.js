@@ -30,11 +30,14 @@ app.use(session({
   saveUninitialized: true,
   cookie: {
     httpOnly: true,
-    maxAge: 1000 * 60 * 60 * 24 * 2
+    expires: Date.now() + 1000 * 60 * 60 * 24 * 2, //expires after two days
+    maxAge: 1000 * 60 * 60 * 24 * 2,
   }
 }));
 
 app.use(flash());
+
+
 
 // Passport setup
 app.use(passport.initialize());
@@ -51,6 +54,10 @@ app.use((req, res, next) => {
   next();
 });
 
+app.get("/", (req, res) => {
+  res.render("login");
+});
+
 // Routes
 const authRoutes = require("./routes/auth");
 const managerRoutes = require("./routes/manager");
@@ -59,8 +66,8 @@ const commonRoutes = require("./routes/common");
 
 app.use("/", authRoutes);
 app.use("/", commonRoutes);
-app.use("/manager", managerRoutes);
-app.use("/clerk", clerkRoutes);
+app.use("/", managerRoutes);
+app.use("/", clerkRoutes);
 
 // Server
 app.listen(3000, () => console.log("Server running on port 3000"));
