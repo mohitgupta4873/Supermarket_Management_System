@@ -1,0 +1,78 @@
+.printbill-container {
+  max-width: 600px;
+  margin: 60px auto;
+  padding: 2rem;
+  background-color: #f9f9f9;
+  border-radius: 8px;
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.1);
+}
+
+.printbill-title {
+  text-align: center;
+  font-size: 2rem;
+  color: #2c3e50;
+  margin-bottom: 1rem;
+}
+
+.printbill-date {
+  text-align: center;
+  font-size: 1rem;
+  color: #666;
+  margin-bottom: 1.5rem;
+}
+
+.printbill-list {
+  list-style: none;
+  padding: 0;
+  margin-bottom: 2rem;
+}
+
+.printbill-item {
+  font-size: 1rem;
+  padding: 8px 0;
+  border-bottom: 1px solid #ddd;
+}
+
+.printbill-total {
+  text-align: right;
+  font-size: 1.5rem;
+  color: #27ae60;
+  font-weight: bold;
+}
+
+.no-bill {
+  text-align: center;
+  margin-top: 100px;
+  font-size: 1.2rem;
+  color: #888;
+}
+
+.printbill-button {
+  margin-top: 20px;
+  padding: 10px 20px;
+  background-color: #2ecc71;
+  color: white;
+  font-size: 1rem;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.printbill-button:hover {
+  background-color: #27ae60;
+}
+
+/* Hide the print button when printing */
+@media print {
+  .printbill-button {
+    display: none;
+  }
+}
+
+
+@media print {
+  .printbill-button {
+    display: none;
+  }
+}

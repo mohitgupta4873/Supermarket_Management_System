@@ -1,0 +1,11 @@
+/* Layout for app */
+.app-container {
+  display: flex;
+  flex-direction: column;
+}
+
+/* Push main content beside sidebar */
+.main-content {
+
+  padding: 20px;
+}

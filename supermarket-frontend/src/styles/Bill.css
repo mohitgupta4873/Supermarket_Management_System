@@ -1,0 +1,87 @@
+.bill-container {
+  padding: 2rem;
+  max-width: 900px;
+  margin: 0 auto;
+  background-color: #fcfcfc;
+  border-radius: 10px;
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.1);
+}
+
+.bill-title {
+  font-size: 2rem;
+  color: #333;
+  margin-bottom: 1.5rem;
+  border-bottom: 2px solid #ccc;
+  padding-bottom: 0.5rem;
+}
+
+.items-list {
+  margin-bottom: 2rem;
+}
+
+.item-row {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin-bottom: 1rem;
+}
+
+.item-name {
+  flex: 1;
+  font-weight: 500;
+  color: #222;
+}
+
+.item-price {
+  width: 80px;
+  color: #444;
+}
+
+.qty-input {
+  width: 60px;
+  padding: 5px;
+}
+
+.add-btn {
+  background-color: #007bff;
+  color: white;
+  padding: 6px 10px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.add-btn:hover {
+  background-color: #0056b3;
+}
+
+.selected-title {
+  font-size: 1.4rem;
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+  color: #444;
+}
+
+.selected-items {
+  margin-bottom: 1.5rem;
+}
+
+.selected-row {
+  margin-bottom: 0.5rem;
+  color: #333;
+}
+
+.submit-btn {
+  padding: 10px 20px;
+  background-color: #28a745;
+  border: none;
+  color: white;
+  font-weight: bold;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.submit-btn:hover {
+  background-color: #218838;
+}
+

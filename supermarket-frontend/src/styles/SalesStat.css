@@ -1,0 +1,41 @@
+.sales-stat-container {
+  max-width: 800px;
+  margin: 60px auto;
+  padding: 2rem;
+  background: #fafafa;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.06);
+}
+
+.sales-stat-title {
+  text-align: center;
+  font-size: 2rem;
+  color: #2c3e50;
+  margin-bottom: 2rem;
+}
+
+.sales-stat-chart {
+  max-width: 500px;
+  margin: 0 auto 2rem;
+}
+
+.sales-log-heading {
+  font-size: 1.4rem;
+  margin-bottom: 1rem;
+  color: #34495e;
+}
+
+.sales-log-list {
+  list-style-type: none;
+  padding: 0;
+}
+
+.sales-log-item {
+  background: #fff;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  padding: 10px 15px;
+  margin-bottom: 8px;
+  font-size: 1rem;
+  color: #444;
+}

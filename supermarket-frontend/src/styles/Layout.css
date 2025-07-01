@@ -1,0 +1,5 @@
+/* styles/Layout.css */
+.main {
+  padding: 20px;
+  margin-top: 60px; /* in case navbar is fixed */
+}

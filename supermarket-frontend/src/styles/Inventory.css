@@ -1,0 +1,89 @@
+.inventory-container {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 2rem;
+  background-color: #fefefe;
+  border-radius: 10px;
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.1);
+}
+
+.inventory-title {
+  font-size: 2rem;
+  margin-bottom: 1.5rem;
+  border-bottom: 2px solid #ccc;
+  padding-bottom: 0.5rem;
+  color: #333;
+}
+
+.inventory-form {
+  margin-bottom: 2rem;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.form-title {
+  width: 100%;
+  font-size: 1.2rem;
+  margin-bottom: 0.5rem;
+  color: #444;
+}
+
+.input-field {
+  padding: 8px;
+  width: 200px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.btn {
+  padding: 8px 16px;
+  background-color: #007bff;
+  border: none;
+  color: white;
+  font-weight: bold;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.btn:hover {
+  background-color: #0056b3;
+}
+
+.item-list {
+  list-style: none;
+  padding: 0;
+}
+
+.item-entry {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 0;
+  border-bottom: 1px dashed #ccc;
+}
+
+.item-info {
+  font-size: 1rem;
+  color: #333;
+}
+
+.update-btn {
+  padding: 4px 10px;
+  font-size: 0.9rem;
+  border: none;
+  border-radius: 3px;
+  background-color: #28a745;
+  color: white;
+  cursor: pointer;
+}
+
+.update-btn:hover {
+  background-color: #218838;
+}
+
+.input-label {
+  font-weight: 500;
+  margin-top: 10px;
+  margin-bottom: 4px;
+  display: block;
+}

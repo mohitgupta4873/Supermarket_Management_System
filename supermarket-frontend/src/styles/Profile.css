@@ -1,0 +1,33 @@
+.profile-container {
+  max-width: 500px;
+  margin: 60px auto;
+  padding: 2rem;
+  background-color: #fefefe;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+}
+
+.profile-title {
+  text-align: center;
+  color: #2c3e50;
+  font-size: 2rem;
+  margin-bottom: 1.5rem;
+}
+
+.profile-info p {
+  font-size: 1.1rem;
+  margin: 10px 0;
+  color: #444;
+}
+
+.profile-info strong {
+  color: #000;
+}
+
+.profile-loading {
+  text-align: center;
+  margin-top: 100px;
+  font-size: 1.2rem;
+  color: #888;
+}
